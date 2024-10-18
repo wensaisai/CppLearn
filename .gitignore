@@ -1,1 +1,95 @@
-#Cpp
+# Cpp
+# 忽略所有编译生成的文件
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+# 忽略调试信息文件
+*.pdb
+*.dSYM/
+
+# 忽略构建目录
+build/
+bin/
+obj/
+
+# 忽略 IDE 和编辑器配置文件
+.vscode/
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.user
+*.filters
+*.vspscc
+*.vssscc
+*.log
+*.cache
+*.ilk
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# 忽略系统生成的文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 忽略临时文件
+*.tmp
+*.bak
+*.swp
+*.orig
+*.rej
+*.lock
+
+# 忽略日志文件
+*.log
+logs/
+log/
+
+# 忽略依赖管理工具的缓存
+vcpkg_installed/
+vcpkg_buildtrees/
+vcpkg_downloads/
+vcpkg_packages/
+vcpkg_manifests/
+
+# 忽略 CMake 缓存和生成文件
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+CTestConfiguration.ini
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestCoverage.xml
+CTestNotes.xml
+CTestScriptModeSetup.cmake
+CTestUpdateVersion.cmake
+CTestCustom.*
+CTestCostData.txt
+CTestDartConfiguration.tcl
+CTestSubmit.cmake
+CTestNightlyStart.cmake
+CTestNightlyRestart.cmake
+CTestCustomPre.cmake
+CTestCustomPost.cmake
+CTestCustom.cmake
+CTestCustom.cmake.in
+CTestCustomPre.cmake
+CTestCustomPost.cmake
+
+# 使用通配符忽略所有 CMake 生成的文件
+*.cmake
+*.cmake.in
