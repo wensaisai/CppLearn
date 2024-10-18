@@ -171,7 +171,7 @@ class EnityLifeTime{
         ~EnityLifeTime(){
             cout << "EnityLifeTime destructor" << endl;
         }
-        void printInfo(){
+        void printInfo() const{
             cout << "EnityLifeTime info" << endl;
         }
 
@@ -187,11 +187,19 @@ class ScopePtr{
         ~ScopePtr(){
             delete m_Ptr;
         }
+        // 重载箭头运算符，返回指针指向的对象
+        EnityLifeTime*  operator->(){
+            return m_Ptr;
+        }
+        const EnityLifeTime*  operator->() const{
+            return m_Ptr;
+        }
 };
 
 void testEnityLifeTime(){
     EnityLifeTime* e1 = new EnityLifeTime();
     ScopePtr ptr = new EnityLifeTime();
+    ptr->printInfo();
     cout << "testEnityLifeTimeOver" << endl;
 }
 
@@ -326,9 +334,9 @@ int main(){
     // pointerTest();
     // conditionalTest();
     // testVec2();
-    // testEnityLifeTime();
+    testEnityLifeTime();
     // testSmartPointer();
-    testCopyConstructor();
+    // testCopyConstructor();
     cout << "Hello world" << endl;
 }
 
