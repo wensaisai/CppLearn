@@ -17,6 +17,7 @@
 
 # 忽略构建目录
 build/
+bin/
 */bin/
 obj/
 
